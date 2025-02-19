@@ -2,93 +2,93 @@ units:
   - path: /autoware/vehicle/sample_mobile_robot
     type: and
     list:
-      - {type: link, link: /autoware/vehicle/lsb_interface/internal_error }
-      - {type: link, link: /autoware/vehicle/lsb_interface/encoder_abz_signal_error }
-      - {type: link, link: /autoware/vehicle/lsb_interface/eEncoder_uvw_signal_error }
-      - {type: link, link: /autoware/vehicle/lsb_interface/encoder_counting_error }
-      - {type: link, link: /autoware/vehicle/lsb_interface/driver_temperature_too_high }
-      - {type: link, link: /autoware/vehicle/lsb_interface/driver_bus_voltage_too_high }
-      - {type: link, link: /autoware/vehicle/lsb_interface/driver_bus_voltage_too_low }
-      - {type: link, link: /autoware/vehicle/lsb_interface/driver_output_short_circuit }
-      - {type: link, link: /autoware/vehicle/lsb_interface/braking_resistor_temperature_too_high }
-      - {type: link, link: /autoware/vehicle/lsb_interface/following_error_over_range }
-      - {type: link, link: /autoware/vehicle/lsb_interface/i2t_error }
-      - {type: link, link: /autoware/vehicle/lsb_interface/speed_following_error_over_range }
-      - {type: link, link: /autoware/vehicle/lsb_interface/motor_temperature_too_high }
-      - {type: link, link: /autoware/vehicle/lsb_interface/searching_motor_failed }
-      - {type: link, link: /autoware/vehicle/lsb_interface/communication_failed }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/internal_error }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/encoder_abz_signal_error }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/eEncoder_uvw_signal_error }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/encoder_counting_error }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/driver_temperature_too_high }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/driver_bus_voltage_too_high }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/driver_bus_voltage_too_low }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/driver_output_short_circuit }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/braking_resistor_temperature_too_high }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/following_error_over_range }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/i2t_error }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/speed_following_error_over_range }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/motor_temperature_too_high }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/searching_motor_failed }
+      - {type: link, link: /autoware/vehicle/lsdb_interface/communication_failed }
 
-  - path: /autoware/vehicle/lsb_interface/internal_error
+  - path: /autoware/vehicle/lsdb_interface/internal_error
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Internal error"
 
-  - path: /autoware/vehicle/lsb_interface/encoder_abz_signal_error
+  - path: /autoware/vehicle/lsdb_interface/encoder_abz_signal_error
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Encoder ABZ signal error"
 
-  - path: /autoware/vehicle/lsb_interface/eEncoder_uvw_signal_error
+  - path: /autoware/vehicle/lsdb_interface/eEncoder_uvw_signal_error
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Encoder UVW signal error"
 
-  - path: /autoware/vehicle/lsb_interface/encoder_counting_error
+  - path: /autoware/vehicle/lsdb_interface/encoder_counting_error
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Encoder counting error"
 
-  - path: /autoware/vehicle/lsb_interface/driver_temperature_too_high
+  - path: /autoware/vehicle/lsdb_interface/driver_temperature_too_high
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Driver temperature too high"
 
-  - path: /autoware/vehicle/lsb_interface/driver_bus_voltage_too_high
+  - path: /autoware/vehicle/lsdb_interface/driver_bus_voltage_too_high
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Driver bus voltage too high"
 
-  - path: /autoware/vehicle/lsb_interface/driver_bus_voltage_too_low
+  - path: /autoware/vehicle/lsdb_interface/driver_bus_voltage_too_low
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Driver bus voltage too low"
 
-  - path: /autoware/vehicle/lsb_interface/driver_output_short_circuit
+  - path: /autoware/vehicle/lsdb_interface/driver_output_short_circuit
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Driver output short-circuit"
 
-  - path: /autoware/vehicle/lsb_interface/braking_resistor_temperature_too_high
+  - path: /autoware/vehicle/lsdb_interface/braking_resistor_temperature_too_high
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Braking resistor temperature too high"
 
-  - path: /autoware/vehicle/lsb_interface/following_error_over_range
+  - path: /autoware/vehicle/lsdb_interface/following_error_over_range
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Following error over-range"
 
-  - path: /autoware/vehicle/lsb_interface/i2t_error
+  - path: /autoware/vehicle/lsdb_interface/i2t_error
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "I²T error(Overload)"
 
-  - path: /autoware/vehicle/lsb_interface/speed_following_error_over_range
+  - path: /autoware/vehicle/lsdb_interface/speed_following_error_over_range
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Speed following error over-range"
 
-  - path: /autoware/vehicle/lsb_interface/motor_temperature_too_high
+  - path: /autoware/vehicle/lsdb_interface/motor_temperature_too_high
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Motor temperature too high"
 
-  - path: /autoware/vehicle/lsb_interface/searching_motor_failed
+  - path: /autoware/vehicle/lsdb_interface/searching_motor_failed
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Searching motor failed(Communication encoder)"
 
-  - path: /autoware/vehicle/lsb_interface/communication_failed
+  - path: /autoware/vehicle/lsdb_interface/communication_failed
     type: diag
-    node: lsb_interface
+    node: lsdb_interface
     name: "Communication failed"
